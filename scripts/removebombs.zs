@@ -7,6 +7,7 @@ val steelCasing = <mekanism:basicblock:8>;
 val blastBricks = <immersiveengineering:stone_decoration:1>;
 val NASA_workbench = <galacticraftcore:rocket_workbench>;
 val illuminatedPanel = <appliedenergistics2:part:180>;
+val draconicCore = <draconicevolution:draconic_core>;
 
 val nuclearBomb = <extraplanets:nuclear_bomb>;
 val fireBomb = <extraplanets:fire_bomb>;
@@ -39,6 +40,10 @@ val glowstoneDust = <ore:dustGlowstone>;
 val redstoneDust = <ore:dustRedstone>;
 val ironIngot = <ore:ingotIron>;
 val quiteClearGlass = <enderio:block_fused_glass:*>;
+
+val draconiumIngot = <ore:ingotDraconium>;
+val goldIngot = <ore:ingotGold>;
+val compressedDiamond = <ore:itemCompressedDiamond>;
 
 //disabling unwanted items
 recipes.remove(nuclearBomb);
@@ -81,6 +86,12 @@ recipes.addShaped(illuminatedPanel,
 [	[null, glowstoneDust, quiteClearGlass],
 	[ironIngot, redstoneDust, quiteClearGlass],
 	[null, glowstoneDust, quiteClearGlass]			]);
+
+recipes.remove(draconicCore);
+recipes.addShaped(draconicCore,
+[	[draconiumIngot, goldIngot, draconiumIngot],
+	[goldIngot, compressedDiamond, goldIngot],
+	[draconiumIngot, goldIngot, draconiumIngot]			]);
 
 furnace.remove(osmiumIngot);
 mods.immersiveengineering.ArcFurnace.removeRecipe(osmiumIngot);
