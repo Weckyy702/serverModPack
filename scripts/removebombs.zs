@@ -1,3 +1,6 @@
+import mods.thermalexpansion.InductionSmelter;
+import mods.immersiveengineering.ArcFurnace;
+
 print("Changing Recipes...");
 
 //recipes to remove / alter
@@ -21,7 +24,7 @@ val steelIngot = <ore:ingotSteel>;
 val glass = <ore:blockGlass>;
 val tinGear = <ore:gearTin>;
 
-val hardenedGlass = <thermalfoundation:glass_alloy:*>;
+val hardenedGlass = <thermalfoundation:glass_alloy:0>;
 val osmiumIngot = <mekanism:ingot:1>;
 
 val stoneBricks = <ore:bricksStone>;
@@ -44,6 +47,8 @@ val quiteClearGlass = <enderio:block_fused_glass:*>;
 val draconiumIngot = <ore:ingotDraconium>;
 val goldIngot = <ore:ingotGold>;
 val compressedDiamond = <ore:itemCompressedDiamond>;
+
+val steelDust = <thermalfoundation:material:96>;
 
 //disabling unwanted items
 recipes.remove(nuclearBomb);
@@ -95,5 +100,7 @@ recipes.addShaped(draconicCore,
 
 furnace.remove(osmiumIngot);
 mods.immersiveengineering.ArcFurnace.removeRecipe(osmiumIngot);
+
+InductionSmelter.addRecipe(hardenedGlass*4, <minecraft:glass>, steelDust*4, 8000);
 
 print("Done!");
