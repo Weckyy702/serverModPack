@@ -15,5 +15,5 @@ Installieren:
 7) "mods" Ordner mit dem runtergeladenen Ordner ersetzen
 8) "scripts" Ordner .minecraft löschen (falls vorhanden)
 9) "scripts" Ordner aus dem runtergeladenen Ordner in .minecraft verschieben
-10) WICHTIG! Minecraft mehr RAM zuordnen (min. 5GB, 5.5GB empfohlen)
+10) WICHTIG! Minecraft mehr RAM zuordnen (min. 4GB, 5.5GB empfohlen)
 
