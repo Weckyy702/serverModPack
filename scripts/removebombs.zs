@@ -13,7 +13,7 @@ val nuclearBomb = <extraplanets:nuclear_bomb>;
 val fireBomb = <extraplanets:fire_bomb>;
 val wirelessConnector = <ae2stuff:wireless>;
 
-//ingridients
+//ingredients
 val ironBars = <ore:barsIron>;
 val grainsOfInfinity = <ore:dustBedrock>;
 val steelIngot = <ore:ingotSteel>;
